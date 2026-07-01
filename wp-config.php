@@ -20,16 +20,17 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress-3530303503a4');
+// Local Windows configuration
+define('DB_NAME', 'wp_funeral');
+define('DB_USER', 'wp_web_admin');
+define('DB_PASSWORD', '123456789');
+define('DB_HOST', '127.0.0.1');
 
-/** MySQL database username */
-define('DB_USER', 'wordpress-3530303503a4');
-
-/** MySQL database password */
-define('DB_PASSWORD', '3d54dc18acc2');
-
-/** MySQL hostname */
-define('DB_HOST', 'sdb-53.hosting.stackcp.net');
+// Original remote hosting configuration
+// define('DB_NAME', 'wordpress-3530303503a4');
+// define('DB_USER', 'wordpress-3530303503a4');
+// define('DB_PASSWORD', '3d54dc18acc2');
+// define('DB_HOST', 'sdb-53.hosting.stackcp.net');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -62,7 +63,7 @@ define('NONCE_SALT',       'dssQHaohY+rat7t1s+pVHpG3R7wVa2Es');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = '9a_';
+$table_prefix  = '34_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -79,6 +80,11 @@ $table_prefix  = '9a_';
 define('WP_DEBUG', false);
 
 define( 'FS_METHOD', 'direct' );
+
+// URL overrides for local environment testing
+define( 'WP_HOME', 'http://godigital.technologymac.co.uk/project/funeral' );
+define( 'WP_SITEURL', 'http://godigital.technologymac.co.uk/project/funeral' );
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
