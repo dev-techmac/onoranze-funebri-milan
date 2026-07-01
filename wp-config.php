@@ -21,16 +21,16 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 // Local Windows configuration
-define('DB_NAME', 'wp_funeral');
-define('DB_USER', 'wp_web_admin');
-define('DB_PASSWORD', '123456789');
-define('DB_HOST', '127.0.0.1');
+// define('DB_NAME', 'wp_funeral');
+// define('DB_USER', 'wp_web_admin');
+// define('DB_PASSWORD', '123456789');
+// define('DB_HOST', '127.0.0.1');
 
 // Original remote hosting configuration
-// define('DB_NAME', 'wordpress-3530303503a4');
-// define('DB_USER', 'wordpress-3530303503a4');
-// define('DB_PASSWORD', '3d54dc18acc2');
-// define('DB_HOST', 'sdb-53.hosting.stackcp.net');
+define('DB_NAME', 'wordpress-3530303503a4');
+define('DB_USER', 'wordpress-3530303503a4');
+define('DB_PASSWORD', '3d54dc18acc2');
+define('DB_HOST', 'sdb-53.hosting.stackcp.net');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -81,9 +81,9 @@ define('WP_DEBUG', false);
 
 define( 'FS_METHOD', 'direct' );
 
-// URL overrides for local environment testing
-define( 'WP_HOME', 'http://godigital.technologymac.co.uk/project/funeral' );
-define( 'WP_SITEURL', 'http://godigital.technologymac.co.uk/project/funeral' );
+// URL overrides for production environment
+define( 'WP_HOME', 'http://onoranzefunebrimilan.it' );
+define( 'WP_SITEURL', 'http://onoranzefunebrimilan.it' );
 
 /* That's all, stop editing! Happy blogging. */
 
